@@ -1,0 +1,14 @@
+CONFIG set allow.sysvipc=1
+
+RESTART
+
+# install required packages
+PKG postgresql15-server
+
+# copy files
+# CP usr /
+
+# enable and start postgre
+SYSRC postgresql_enable=YES
+SERVICE postgresql initdb
+SERVICE postgresql start
