@@ -3,7 +3,7 @@ CONFIG set allow.sysvipc=1
 RESTART
 
 # install required packages
-PKG postgresql15-server
+PKG postgresql16-server
 
 # copy files
 # CP usr /
